@@ -2,13 +2,15 @@ package academy.devdojo.maratonajava.introducao;
 public class Aula2 {
 
     /**
+     * <pre>
      *       8 Tipos Primitivos / Mensagens de codigos
      * ATALHO: psvm + tab(public static void)
+     *</pre>
      *
-     *
-     *
+     *<pre>
      * Gurdam em memoria valores simples (palavras reservadas)
      * int, float, double, char, byte, short, long, boolean
+     * </pre>
      */
 
 
