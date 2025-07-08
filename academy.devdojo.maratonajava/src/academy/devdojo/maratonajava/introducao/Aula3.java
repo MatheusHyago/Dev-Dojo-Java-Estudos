@@ -12,6 +12,8 @@ package academy.devdojo.maratonajava.introducao;
  *  double  = 8 bytes de memória
  *  boolean = 1 byte  de memória
  *  char    = 2 bytes de memória
+ *
+ *  STRING NÃO É TIPO PRIMITIVO É TIPO DE REFERENCIA
  * </pre>
  *
  * Valores padrão:
