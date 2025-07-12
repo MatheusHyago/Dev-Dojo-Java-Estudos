@@ -4,7 +4,7 @@ package academy.devdojo.maratonajava.introducao;
  *
  * <pre>
  *
- *
+ *casos complexos utilizam if  else para caso mais simples switch case
  * </pre>
  *
  * */
