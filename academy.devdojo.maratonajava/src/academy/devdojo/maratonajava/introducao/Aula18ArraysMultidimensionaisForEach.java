@@ -47,9 +47,11 @@ public class Aula18ArraysMultidimensionaisForEach {
         }
         System.out.println("-----------------");
 
-        // Percorrendo a matriz com for-each, mostrando apenas os valores.
+        // Para cada linha (array de inteiros) presente em 'dias'
         for (int[] arrayBase : dias) {
+            // Para cada elemento inteiro presente na linha atual
             for (int num : arrayBase) {
+                // Imprime o valor do elemento
                 System.out.println(num);
             }
         }
