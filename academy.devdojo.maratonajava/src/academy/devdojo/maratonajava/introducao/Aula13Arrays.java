@@ -25,7 +25,7 @@ package academy.devdojo.maratonajava.introducao;
  * </ul>
  */
 
-public class Aula13 {
+public class Aula13Arrays {
 
     public static void main(String[] args) {
         int[] idades = null;   //somente tipos de referência podem ser nulos

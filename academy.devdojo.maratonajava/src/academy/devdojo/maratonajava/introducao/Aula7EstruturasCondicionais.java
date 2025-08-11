@@ -4,7 +4,7 @@ package academy.devdojo.maratonajava.introducao;
 /**
  * Estrutura condicionais
  */
-public class Aula7 {
+public class Aula7EstruturasCondicionais {
 
     public static void main(String[] args) {
 

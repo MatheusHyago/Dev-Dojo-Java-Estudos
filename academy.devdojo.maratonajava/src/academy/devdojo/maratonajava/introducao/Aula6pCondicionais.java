@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.introducao;
 
 // logicos sempre retorna boolean < > <= >= == !=
-public class Aula6 {
+public class Aula6pCondicionais {
     //+ -/*
     public static void main(String[] args) {
 

@@ -9,7 +9,7 @@ package academy.devdojo.maratonajava.introducao;
  *
  * */
 
-public class Aula12  {
+public class Aula12While {
 
     public static void main(String[] args) {
 

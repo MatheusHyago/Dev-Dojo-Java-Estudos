@@ -16,7 +16,7 @@ package academy.devdojo.maratonajava.introducao;
  */
 
 
-public class Aula4 {
+public class Aula4TiposPrimitivos {
     public static void main(String[] args) {
 
 

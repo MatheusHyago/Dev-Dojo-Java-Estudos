@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.introducao;
 /**
  *  Exemplo ternario Java
  * */
-public class Aula8 {
+public class Aula8EstruturasCondicionaisTernario {
     public static void main(String[] args) {
 
         // Patrocinar if salario caro

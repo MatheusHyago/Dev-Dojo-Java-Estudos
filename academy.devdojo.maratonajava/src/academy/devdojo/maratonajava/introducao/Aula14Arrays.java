@@ -17,7 +17,7 @@ package academy.devdojo.maratonajava.introducao;
  * */
 
 
-public class Aula14 {
+public class Aula14Arrays {
 
     public static void main(String[] args) {
 

@@ -1,5 +1,5 @@
 package academy.devdojo.maratonajava.introducao;
-public class Aula2 {
+public class Aula2TiposPrimitivos {
 
     /**
      * <pre>

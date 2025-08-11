@@ -9,7 +9,7 @@ package academy.devdojo.maratonajava.introducao;
  *
  * */
 
-public class Aula9 {
+public class Aula9EstruturasCondicionais {
     public static void main(String[] args) {
 
         double salarioAnual= 70000;

@@ -17,7 +17,7 @@ package academy.devdojo.maratonajava.introducao;
  *     <li>string</li>
  * </ul>
  */
-public class Aula11 {
+public class Aula11SwitchCase {
 
     public static void main(String[] args) {
 

@@ -24,7 +24,7 @@ package academy.devdojo.maratonajava.introducao;
  */
 
 
-public class Aula3 {
+public class Aula3TiposPrimitivos {
     public static void main(String[] args) {
         int idade = 10;
         long numeroGrande = 100000;

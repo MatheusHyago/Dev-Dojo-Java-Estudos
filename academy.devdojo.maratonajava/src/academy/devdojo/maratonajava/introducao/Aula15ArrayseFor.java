@@ -8,7 +8,7 @@ package academy.devdojo.maratonajava.introducao;
  * */
 
 
-public class Aula15 {
+public class Aula15ArrayseFor {
 
     public static void main(String[] args) {
 
