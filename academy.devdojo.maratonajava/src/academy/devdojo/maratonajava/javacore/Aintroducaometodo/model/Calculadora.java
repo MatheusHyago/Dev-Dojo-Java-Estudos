@@ -53,4 +53,19 @@ public class Calculadora {
             return num1 / num2;
         }
     }
+
+    //return para void
+    //nao retorna valor
+    // break de void
+
+    //return;
+    public void imprimeDivisao(double num1, double num2) {
+        //indica que quem chamar esse metodo vai ter retorno valor 0
+
+        if (num2 == 0) {
+            System.out.println("Não é possível dividir por zero.");
+            return; //retorna 0 se o segundo numero for zero
+        }
+        System.out.println(num1/ num2);
+    }
 }

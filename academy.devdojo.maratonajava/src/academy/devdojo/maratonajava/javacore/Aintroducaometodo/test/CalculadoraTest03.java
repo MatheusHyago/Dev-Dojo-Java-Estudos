@@ -15,5 +15,13 @@ public class CalculadoraTest03 {
         //se o metodo nao tiver retorno, nao é possivel armazenar o valor retornado
         System.out.println(resultado);
 
+        System.out.println("-----------------");
+
+        //nao se coloca metodo com retorno dentro de outro metodo
+        //pois o metodo com retorno deve ser chamado e o valor retornado deve ser armazenado
+        //apenas deve se chamar o metodo + o parametro e definir os valores pois a execução por se tratar de ser void
+        //sera feito lá
+        calculadora.imprimeDivisao(87, 0);
+
     }
 }
