@@ -24,16 +24,17 @@ package academy.devdojo.maratonajava.javacore.Aintroducaometodo.model;
 
 public class Calculadora {
     // nao retorna nada, ou seja, nao tem retorno mas tem saida
-    public void somaDoisNumeros(){
+    public void somaDoisNumeros() {
         System.out.println(10 + 10);
     }
 
-    public void subtraiDoisNumeros(){
+    public void subtraiDoisNumeros() {
         System.out.println(10 - 5);
     }
+
     //variavel + identificador = parametro
     //boas praticas funções ou metodos com mais de 3 argumentos devem ser evitdos deve ser dividido em metodo menor
-    public void multiplicaDoisNumeros(int num1, int num2){
+    public void multiplicaDoisNumeros(int num1, int num2) {
         System.out.println(num1 * num2);
     }
 
@@ -41,14 +42,15 @@ public class Calculadora {
     // o retorno é o valor que o metodo retorna, ou seja, o resultado da ação]
     // retorno de um metodo se da a inicialização da variavel junto ao atributo
     //no que vai receber criase uma variavel com valor a ser retornado
-    public double divideDoisNumeros(double num1, double num2){
+    public double divideDoisNumeros(double num1, double num2) {
         //indica que quem chamar esse metodo vai ter retorno valor 0
 
-        if(num2 == 0){
+        if (num2 == 0) {
             //return funciona como um break, ou seja, ele para a execução do metodo
             return 0; //retorna 0 se o segundo numero for zero
 
+        } else {
+            return num1 / num2;
         }
-        return num1/num2;
     }
 }
