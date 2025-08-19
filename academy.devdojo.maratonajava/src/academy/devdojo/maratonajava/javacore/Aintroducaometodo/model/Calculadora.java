@@ -6,6 +6,7 @@ package academy.devdojo.maratonajava.javacore.Aintroducaometodo.model;
  * precisa de modificadores de acesso
  * segunda parte retorno do metodo
  *
+ *  metodo tipo void não retorna nada, ou seja, não tem retorno
  *
  * retorno != diferente de saida do metodo
  *ex metodo que recebe dois numeros e retorna a soma
@@ -18,7 +19,7 @@ package academy.devdojo.maratonajava.javacore.Aintroducaometodo.model;
  * * parametros são os valores que o metodo recebe para realizar a ação
  *
  *
- *
+ *parametros são variaveis locais presentes no metodo
  * */
 
 public class Calculadora {
@@ -29,5 +30,25 @@ public class Calculadora {
 
     public void subtraiDoisNumeros(){
         System.out.println(10 - 5);
+    }
+    //variavel + identificador = parametro
+    //boas praticas funções ou metodos com mais de 3 argumentos devem ser evitdos deve ser dividido em metodo menor
+    public void multiplicaDoisNumeros(int num1, int num2){
+        System.out.println(num1 * num2);
+    }
+
+    //metodo com retorno
+    // o retorno é o valor que o metodo retorna, ou seja, o resultado da ação]
+    // retorno de um metodo se da a inicialização da variavel junto ao atributo
+    //no que vai receber criase uma variavel com valor a ser retornado
+    public double divideDoisNumeros(double num1, double num2){
+        //indica que quem chamar esse metodo vai ter retorno valor 0
+
+        if(num2 == 0){
+            //return funciona como um break, ou seja, ele para a execução do metodo
+            return 0; //retorna 0 se o segundo numero for zero
+
+        }
+        return num1/num2;
     }
 }
