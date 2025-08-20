@@ -68,4 +68,24 @@ public class Calculadora {
         }
         System.out.println(num1/ num2);
     }
+
+    //quando e passado envia uma copia do valor do argumento
+
+    //variavies tipo primitivo sempre enviam uma copia do valor
+    //exemplo int, double, float, char, boolean
+    //variaveis do tipo referencia enviam o endereco de memoria do objeto
+    //exemplo String, Arrays, Objetos
+    //nesse caso o metodo pode alterar o objeto original
+
+    //variaveis ti´po primitivo nunca alteram o valor original
+    //pois enviam uma copia do valor
+    public void alteraDoisNumero(int numero1, int numero2) {
+
+        numero1 = 99;
+        numero2 = 33;
+        System.out.println("Dentro do alteraDoisNumeros");
+        System.out.println("numero1: " + numero1);
+        System.out.println("numero2: " + numero2);
+
+    }
 }
