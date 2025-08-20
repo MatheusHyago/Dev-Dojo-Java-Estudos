@@ -1,58 +1,60 @@
+// academy.devdojo.maratonajava/src/academy/devdojo/maratonajava/javacore/Aintroducaometodo/test/EstudanteTest01.java
 package academy.devdojo.maratonajava.javacore.Aintroducaometodo.test;
 
 import academy.devdojo.maratonajava.javacore.Aintroducaometodo.model.Estudante;
 import academy.devdojo.maratonajava.javacore.Aintroducaometodo.model.ImpressoraEstudante;
 
+/**
+ * Demonstra a criação de objetos, atribuição de valores e passagem de referência
+ * para métodos em Java. Mostra que métodos recebem uma cópia da referência do objeto,
+ * mas não alteram o objeto original, a menos que modifiquem seus atributos.
+ */
 public class EstudanteTest01 {
 
-
+    /**
+     * Método principal que instancia dois estudantes, imprime seus dados e
+     * explica o conceito de referência de objetos na memória.
+     *
+     * @param args argumentos da linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
 
-        //cada um  faz ref a um objeto diferente na memoria
-        //ou seja, cada um tem seu proprio espaço na memoria
-
-
+        // Cada variável estudante faz referência a um objeto diferente na memória.
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
-        ImpressoraEstudante  impressora = new ImpressoraEstudante();
 
-        //1 obj
+        // Impressora para exibir os dados dos estudantes.
+        ImpressoraEstudante impressora = new ImpressoraEstudante();
+
+        // Inicializando atributos do primeiro estudante.
         estudante01.nome = "kokushibo";
         estudante01.idade = 1000;
         estudante01.sexo = 'M';
 
-        //2 obj
+        // Inicializando atributos do segundo estudante.
         estudante02.nome = "Tanjiro";
         estudante02.idade = 16;
         estudante02.sexo = 'M';
 
-
-        // quando feito desta forma o metodo imprime recebe uma copia do valor
-        //e nao altera o objeto original na memoria
-
-        //obj vem na chamada do metodo como argumento
-        //assim faz copia da referencia do objeto estudante01
-
-
-        //variaveis fazem referencia a um objeto na memoria
-        //e quando o metodo imprime recebe o objeto estudante01, ele recebe uma copia da referencia
-        //ou seja, o metodo imprime recebe uma copia do objeto estudante01
-        //e nao altera o objeto original na memoria
-
-        //nao tem limite de variveis fazem referencia ao mesmo objeto na memoria
-        System.out.println("copias");
+        // Ao passar o objeto como argumento, o método recebe uma cópia da referência.
+        // Isso significa que pode acessar e modificar os atributos do objeto original.
+        System.out.println("Imprimindo estudante01:");
         impressora.imprime(estudante01);
-        System.out.println("copias");
+
+        System.out.println("Imprimindo estudante02:");
         impressora.imprime(estudante02);
 
+        System.out.println("-----------------");
 
-        System.out.println(estudante01.nome);
-        System.out.println(estudante01.sexo);
-        System.out.println(estudante01.idade);
+        // Exibindo os dados diretamente, mostrando que os valores permanecem os mesmos.
+        System.out.println("Dados estudante01:");
+        System.out.println("Nome: " + estudante01.nome);
+        System.out.println("Sexo: " + estudante01.sexo);
+        System.out.println("Idade: " + estudante01.idade);
 
-        System.out.println(estudante02.nome);
-        System.out.println(estudante02.sexo);
-        System.out.println(estudante02.idade);
-
+        System.out.println("Dados estudante02:");
+        System.out.println("Nome: " + estudante02.nome);
+        System.out.println("Sexo: " + estudante02.sexo);
+        System.out.println("Idade: " + estudante02.idade);
     }
 }
