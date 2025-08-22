@@ -21,6 +21,10 @@ package academy.devdojo.maratonajava.javacore.Aintroducaometodo.model;
  *
  * Alta coesão e bom
  * Baixa coesão ruim
+ *
+ * This metodo depotente
+ * pois não importa quantas vezes chamarmos o metodo imprimeDadosPessoa
+ * ele nao altera os atributos nome e idade
  * */
 public class Pessoa {
 
@@ -29,10 +33,11 @@ public class Pessoa {
     private int idade;
 
     // Métodos
-    public void imprimeDadosPessoa() {
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Idade: " + this.idade);
-    }
+    //this.nome e getNome são usados para acessar o atributo nome tem a mesma função
+    //    public void imprimeDadosPessoa() {
+    //        System.out.println("Nome: " + this.nome);
+    //        System.out.println("Idade: " + this.idade);
+    //    }
 
     //define os metodos set e get para os atributos nome e idade
     //que são privados e permitem que seus valores sejam acessados e modificados

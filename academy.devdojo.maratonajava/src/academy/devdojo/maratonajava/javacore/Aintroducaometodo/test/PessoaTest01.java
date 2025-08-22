@@ -9,9 +9,9 @@ public class PessoaTest01 {
         Pessoa pessoa = pessoa = new Pessoa();
 
         pessoa.setNome ("Goku");
-        pessoa.setIdade(0);
+        pessoa.setIdade(12);
 
-        pessoa.imprimeDadosPessoa();
+//        pessoa.imprimeDadosPessoa();
 
         System.out.println("------------------------------");
 
