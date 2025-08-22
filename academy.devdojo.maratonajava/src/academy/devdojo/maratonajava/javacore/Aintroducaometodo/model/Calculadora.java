@@ -88,4 +88,23 @@ public class Calculadora {
         System.out.println("numero2: " + numero2);
 
     }
+
+    public void somaArray(int [] numeros){
+        int soma = 0;
+        for (int num: numeros){
+            soma += num; //soma = soma + num;
+
+            System.out.println(soma);
+        }
+
+    }
+    //variavel varargs facilita sintaxe
+    //
+    public void somavarArgs(int... numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num; //soma = soma + num;
+        }
+        System.out.println(soma);
+    }
 }
