@@ -25,6 +25,8 @@ package academy.devdojo.maratonajava.javacore.Aintroducaometodo.model;
  * This metodo depotente
  * pois não importa quantas vezes chamarmos o metodo imprimeDadosPessoa
  * ele nao altera os atributos nome e idade
+ *
+ * var de referencia fora do objeto pode acessar apenas o que é public instanciado no objeto
  * */
 public class Pessoa {
 
