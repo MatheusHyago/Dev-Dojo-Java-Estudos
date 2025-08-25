@@ -44,7 +44,6 @@ public class Anime {
     }
 
 
-
     public void imprime(){
         System.out.println("Tipo: " + this.tipo);
         System.out.println("Episodios: " + this.episodios);
