@@ -15,7 +15,7 @@ public class AnimeTest01 {
 
         //representa o construtor  da classe Anime
         //so vai criar o objeto se passar o parametro nome definido no construtor
-        Anime anime = new Anime("TV", 37, "Death Note", "Terror");
+        Anime anime = new Anime("TV", 37, "Death Note", "Terror", "Mad House");
         Anime anime2 = new Anime();
         anime.imprime();
         System.out.println("-------------------");

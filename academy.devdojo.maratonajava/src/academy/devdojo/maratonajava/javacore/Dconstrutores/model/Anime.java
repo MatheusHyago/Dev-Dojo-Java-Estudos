@@ -15,11 +15,15 @@ public class Anime {
     private int episodios;
     private String nome;
     private String genero;
+    private String estudio;
 
     //Construtores dão origens a objetos
     //define o que nescessario para criar o objeto
     //executado antes de qualquer metodo presente na classe
     public Anime(String tipo, int episodios, String nome, String genero){
+
+        //chama construtor sem parametros
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
@@ -29,13 +33,24 @@ public class Anime {
     //sobre carga de construtores
     //cria outro construtor com mesmo nome sem retorno cria sem, paramentros
     public Anime(){
+        System.out.println("Dentro do construtor sem parametros");
     }
+
+    public Anime(String tipo, int episodios, String nome, String genero, String estudio){
+        //deve ser a primeira linha do construtor
+        //chama o construtor com 4 parametros
+        this(tipo, episodios, nome, genero);
+        this.estudio = estudio;
+    }
+
+
 
     public void imprime(){
         System.out.println("Tipo: " + this.tipo);
         System.out.println("Episodios: " + this.episodios);
         System.out.println("Nome: " + this.nome);
         System.out.println("Genero: " + this.genero);
+        System.out.println("Estudio: " + this.estudio);
     }
 
     //setados para o final por motivo de importancia e hierarquia de atributos
