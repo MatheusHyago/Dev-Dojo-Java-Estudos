@@ -18,14 +18,33 @@ package academy.devdojo.maratonajava.javacore.Hherenca.model;
  * herença é um - acoplamento forte
  * associação é tem um - acoplamento fraco
  *
+ *
+ * Não existe herança múltipla em java, ou seja, uma classe não pode herdar de mais de uma classe.
  * */
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    //da acesso direto a variavel e subclasses independente do pacote
+    //todas do pacote teram acesso como se fosse public
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
 
+
+    //Construtores
+    //Em herança todos os construtores das subclasses devem chamar um construtor da superclasse pois se baseiam nele
+    //se a superclasse não tiver um construtor padrão (sem argumentos) a subclasse deve chamar um construtor específico da superclasse
+
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
+    //Construtor sobrecarregado
+
+    public Pessoa(String nome, String cpf){
+        //primeira linha valida do construtor deve ser a chamada de outro construto
+        this(nome);
+        this.cpf = cpf;
+    }
 
     public void imprime() {
         System.out.println("Nome: " + this.nome);

@@ -12,8 +12,7 @@ public class HererancaTest01 {
         endereco.setRua("Rua dos 2");
         endereco.setCep("00000-000");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Mahoraga");
+        Pessoa pessoa = new Pessoa("Mahoraga");
         pessoa.setCpf("123.222.312-00");
         pessoa.setEndereco(endereco);
 
@@ -21,8 +20,7 @@ public class HererancaTest01 {
         //e traz os atributos e metodos dela no caso salario
         //herança acopla fortemente as classes
         //estende e mantem o relacionamento das classes
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Sukuna");
+        Funcionario funcionario = new Funcionario("Sukuna");
         funcionario.setCpf("321.222.312-00");
         funcionario.setEndereco(endereco);
         funcionario.setSalario(10000);
