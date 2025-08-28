@@ -32,5 +32,5 @@ public class HererancaTest01 {
         System.out.println("-------------------");
         funcionario.imprime();
 
-    }
+      }
 }

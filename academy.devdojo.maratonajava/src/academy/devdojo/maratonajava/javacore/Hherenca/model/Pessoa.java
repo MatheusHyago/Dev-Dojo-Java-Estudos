@@ -30,7 +30,7 @@ public class Pessoa {
     public void imprime() {
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);
-        System.out.println("Endereço: " + this.endereco);
+        System.out.println("Endereço: " + this.endereco.getRua() + ", " + this.endereco.getCep());
     }
 
     public String getNome() {
@@ -49,6 +49,7 @@ public class Pessoa {
     public Endereco getEndereco() {
         return endereco;
     }
+
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
