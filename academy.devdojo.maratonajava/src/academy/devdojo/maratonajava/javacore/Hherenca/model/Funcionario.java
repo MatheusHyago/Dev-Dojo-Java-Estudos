@@ -42,6 +42,11 @@ public class Funcionario extends Pessoa {
     public Funcionario(String nome) {
         //mesmo padrao do override chama o super construtor que traz o atributo nome do construtor da super classe
         //e depois disso posso passar os atributos especificos da classe funcionario
+
+        //nunca esqueça de chamar o construtor da super classe
+        //gera apenas com os campos visuais da classe funcionario
+        //crtl + o da pra fazer a sobreescrita do construtor
+
         super(nome);
     }
 
