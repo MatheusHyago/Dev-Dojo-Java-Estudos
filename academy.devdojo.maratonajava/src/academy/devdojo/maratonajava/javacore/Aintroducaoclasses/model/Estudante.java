@@ -14,6 +14,13 @@ package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.model;
  * Exemplo: Pessoa, Carro, Produto, Cliente, etc.
  * Model é uma classe que representa um objeto do mundo real, com atributos e métodos
  * e que e exportado para o banco de dados.
+ *
+ * classe da vida ao objeto
+ * objeto executa classe
+ *
+ * classe = corpo
+ * objeto = alma
+ * metodo = orgão
  * */
 public class Estudante {
     //modificadores de acesso
