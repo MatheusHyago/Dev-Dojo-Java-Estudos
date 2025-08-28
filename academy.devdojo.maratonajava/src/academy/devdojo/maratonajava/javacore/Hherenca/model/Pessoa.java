@@ -20,6 +20,16 @@ package academy.devdojo.maratonajava.javacore.Hherenca.model;
  *
  *
  * Não existe herança múltipla em java, ou seja, uma classe não pode herdar de mais de uma classe.
+ *
+ * Todas as classes do java são filhas da classe Object = pacote java.lang = toda classe e um objeto
+ * não pode ter herança multipla duas classes nao podem ser lidas diretamente duas superclasses mas pode avo e tataravo
+ *
+ * toda classe criada e um objeto
+ *
+ * Pessoa é filha de Object
+ * Funcionario é filha de Pessoa
+ * Object e Avo de Funcionario
+ *
  * */
 
 public class Pessoa {
