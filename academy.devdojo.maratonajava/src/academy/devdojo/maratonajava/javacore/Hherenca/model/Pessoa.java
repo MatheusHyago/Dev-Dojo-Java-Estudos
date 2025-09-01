@@ -39,6 +39,16 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    //bloco de inicialização com herança
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }{
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
+
 
 
     //Construtores
@@ -46,15 +56,11 @@ public class Pessoa {
     //se a superclasse não tiver um construtor padrão (sem argumentos) a subclasse deve chamar um construtor específico da superclasse
 
     public Pessoa(String nome){
+        System.out.println("Dentro do construtor ");
         this.nome = nome;
     }
     //Construtor sobrecarregado
 
-    public Pessoa(String nome, String cpf){
-        //primeira linha valida do construtor deve ser a chamada de outro construto
-        this(nome);
-        this.cpf = cpf;
-    }
 
     public void imprime() {
         System.out.println("Nome: " + this.nome);

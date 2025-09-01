@@ -21,6 +21,17 @@ public class Funcionario extends Pessoa {
 
     private double salario;
 
+    //bloco de inicialização com herança
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de Funcionario");
+    }{
+        System.out.println("Dentro do bloco de inicialização de Funcionario 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de Funcionario 2");
+    }
+
+
     //metodo de sobreescrita @Override
     //Escreve o com a mesma assinatura do metodo da superclasse / classe pai
     //regra da sobreescrita sempre importa todos os atributos da super classe
@@ -48,6 +59,7 @@ public class Funcionario extends Pessoa {
         //crtl + o da pra fazer a sobreescrita do construtor
 
         super(nome);
+        System.out.println("Dentro do construtor de funcionario");
     }
 
     public void relatorioPagamento(){
