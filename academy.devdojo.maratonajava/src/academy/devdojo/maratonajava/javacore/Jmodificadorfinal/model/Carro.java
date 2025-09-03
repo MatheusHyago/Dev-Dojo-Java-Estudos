@@ -24,9 +24,14 @@ public  class Carro {
     static {
         VELOCIDADE_LIMITE = 250;
     }
-
     //ou construtor
 
+    public final void  imprime(){
+        System.out.println("--------------------");
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Velocidade Limite: " + VELOCIDADE_LIMITE);
+        System.out.println("Comprador: " + COMPRADOR);
+    }
 
     public String getNome() {
         return nome;
