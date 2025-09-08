@@ -8,10 +8,6 @@ package academy.devdojo.maratonajava.javacore.Kenum.model;
  * */
 public class Cliente {
 
-    public enum TipoPagamento{
-        DEBITO, CREDITO
-
-    }
 
     private String nome;
     private TipoPagamento tipoPagamento;

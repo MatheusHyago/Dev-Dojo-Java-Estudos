@@ -22,6 +22,18 @@ public enum TipoCliente {
         this.VALOR = VALOR;
         this.nomeRelatorio = nomeRelatorio;
     }
+
+    //valueOf manual
+    public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+        //percorre o metodo retornando um array de todas as enumerações
+        for (TipoCliente tipoCliente : values()) {
+            if (tipoCliente.getNomeRelatorio().equals(nomeRelatorio)) {
+                return tipoCliente;
+            }
+        }
+        return null;
+    }
+
     //apenas get sem set
     //pois nao pode ser alterado
     public int getValor() {
