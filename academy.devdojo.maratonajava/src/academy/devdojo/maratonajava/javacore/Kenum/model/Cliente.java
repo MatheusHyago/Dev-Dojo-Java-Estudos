@@ -2,6 +2,9 @@ package academy.devdojo.maratonajava.javacore.Kenum.model;
 
 /**
  * Enum - enumeração
+ *
+ *tratando exeção
+ *comparacao string equals case sensitive (considera maiusculo e minusculo)
  * */
 public class Cliente {
 
@@ -9,25 +12,17 @@ public class Cliente {
     private String tipo;
     private TipoCliente tipoCliente;
 
-    public static final String PESSOA_FISICA = "PESSOA_FISICA";
-    public static final String PESSOA_JURIDICA = "PESSOA_JURIDICA";
 
-
-    public Cliente(String nome, String tipoCliente) {
-        //tratando exeção
-        //comparacao string equals case sensitive (considera maiusculo e minusculo)
-        if(!tipoCliente.equals(PESSOA_FISICA) && !tipoCliente.equals(PESSOA_JURIDICA)){
-            return;
-        }
+    public Cliente(String nome, TipoCliente tipoCliente) {
         this.nome = nome;
-        this.tipo = tipoCliente;
+        this.tipoCliente = tipoCliente;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipoCliente='" + tipo + '\'' +
+                ", tipoCliente=" + tipoCliente +
                 '}';
     }
 
@@ -39,11 +34,19 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getTipoCliente() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipoCliente(String tipoCliente) {
-        this.tipo = tipoCliente;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public TipoCliente getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(TipoCliente tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
 }
