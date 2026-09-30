@@ -19,7 +19,7 @@ public class Escola {
         System.out.println(this.nome);
         if (professores != null) return;
         for (Professor professor : professores) {
-            System.out.println(professor.getNome());
+//            System.out.println(professor.getNome());
         }
 
     }
